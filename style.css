@@ -1,0 +1,370 @@
+header {
+  background-color: #f0f0f0; /* Add a background color to the header */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* Başlık ve altımdaki ek metin */
+header h2 {
+  text-align: center;
+  display: block;
+  font-size: 0.6em;
+}
+
+/* Türkiye Satranç Federasyonu metni */
+/*
+//header h1 {
+  text-align: center;
+  display: block;
+  font-size: 0.6em;
+}
+*/
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogan img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.slogan span {
+  .slogan span {
+    font-size: 16px;
+    color: #000000;
+    position: relative; /* İçerik konumunu ayarlamak için */
+    top: -10px; /* Resmin altına kaydırmak için değer ayarlayın */
+  }
+}
+
+/* Menü */
+nav {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+nav li:last-child {
+  border-bottom: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
+/*LOGİN KAYIT FORMU*/
+#registration h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+#registration {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Form kutusu ve metni dikeyde hizala */
+  flex-direction: column; /* Öğeleri dikey olarak hizala */
+  margin-top: 20px;
+}
+.form-container {
+  text-align: center;
+  margin-top: 5px; /* Form içeriğini yatay olarak ortala */
+}
+
+#registration form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px; /* Form kutusunun metinden ayrılması için üst boşluk ekleyin */
+}
+#registration form label {
+  display: inline-block;
+  width: 150px; /* adjust the width to your liking */
+  margin-right: 10px;
+}
+
+#registration form input[type="text"] {
+  width: 250px; /* adjust the width to your liking */
+  height: 20px; /* adjust the height to your liking */
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#registration form input[type="submit"] {
+  background-color: rgba(230, 46, 18, 0.955);
+  width: 150px; /* adjust the width to your liking */
+  height: 40px; /* adjust the height to your liking */
+  font-size: 18px; /* adjust the font size to your liking */
+  padding: 10px;
+  margin: 20px auto 0; /* Dikey olarak butonu ortala */
+  display: block; /* İçeriği bir blok olarak göster */
+}
+
+
+/* Eklemiş olduğumuz resimlere hover olduğunda büyüme efekti */
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.image-wrapper {
+  position: relative;
+  margin-left: 15px;
+  margin-right: 20px;
+  width: 150px; /* Resimlerin genişliği */
+  height: 150px; /* Resimlerin yüksekliği */
+  overflow: hidden;
+  transition: transform 0.3s ease; /* wrapper'a hover efekti ekleyin */
+}
+
+.image-wrapper:hover {
+  transform: scale(1.5); /* wrapper'a hover efekti ekleyin */
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.0);
+}
+
+.image-wrapper .info-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  padding: 5px;
+  background-color: rgba(4, 81, 12, 0.6);
+  color: white;
+  border: none;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+}
+
+.image-wrapper:hover .info-button {
+  display: block;
+}
+
+#text {
+  position: absolute; /* Position the text absolutely inside the container */
+  /* Align the text to the left of the container */
+  padding: 10px;
+  width: 100%; /* Make the text container the same width as the image */
+  text-align: center; /* Center the text horizontally */
+}
+
+/*Kayıt form özellikleri*/
+#registration table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+#registration th, #registration td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+#registration th {
+  background-color: #f0f0f0;
+}
+
+#registration tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#teacher_list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#teacher_list > div {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.content {
+  padding: 20px;
+  margin: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start; /* İçerikleri yukarı hizala */
+}
+
+.content-image {
+  margin-left: 40px;
+  margin-right: 20px; /* Metinden ayrılmak için sağ boşluk */
+  max-width: 15%; /* Resmin maksimum genişliği */
+}
+
+.content-text {
+  flex-grow: 1; /* Metnin boş alanı doldurması için */
+}
+
+.content h2 {
+  color: #000000;
+}
+
+.content p {
+  color: #000000;
+}
+/*turnuva kayıt formu*/
+
+/* Ana kayıt bölümünü ortala */
+#reg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #21283c;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 70%; /* Formun genişliğini ayarlayın */
+  margin: 0 auto; /* Orta hizaya al */
+}
+
+/* Kayıt formunu ve bilgilendirme metnini yan yana yerleştir */
+.registration-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Bilgilendirme metni üstte, form altta olsun */
+}
+
+/* Mayıs Ayı Satranç UKD Turnuvası Kayıt Formu başlığını ortala */
+.reg-text-h2 h2 {
+  display: block;
+  justify-content: center;
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+/* Bilgilendirme metnini sola yasla */
+.info-text {
+  float: right;
+  width: 50%; /* Bilgilendirme metni genişliği */
+  color: #f0f0f0;
+  
+}
+
+/* Kayıt formunu sağa yasla */
+#reg form {
+  background-color: #a5b2da;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 20%; /* Formun genişliğini ayarlayın */
+  margin-left: 20px; /* Formu biraz sağa yasla */
+}
+
+/* Form öğelerini düzenleme */
+#reg form label {
+  display: inline-block;
+
+  margin-left: 5px;
+}
+
+#reg form input[type="text"] {
+  width: 75%;/* Giriş alanlarının genişliğini ayarlayın */
+  padding: 10px;
+  
+}
+
+#reg form input[type="submit"] {
+  align-items: center;
+  background-color: #21283c;
+  margin-left: 30%;
+  color: #f0f0f0;
+}
+
+/* Turnuva kutu stilleri */
+.turnuva {
+  max-width: 500px; /* Turnuva kutularının genişliğini ayarla */
+  margin: 20px auto; /* Ortala ve yukarıdan boşluk bırak */
+}
+
+.turnuva h2 {
+  text-align: left; /* Başlığı sola hizala */
+  margin-bottom: 20px; /* Başlığın altına boşluk ekle */
+  margin-left: 20px;
+}
+
+.turnuva-kutu {
+  background-color: #b1b8d1; /* Kutu arka plan rengi */
+  padding: 20px; /* Kutu içi boşluk */
+  border: 1px solid #b1b8d1; /* Kutu kenarlığı */
+  border-radius: 10px; /* Kutu köşeleri yuvarlak */
+  margin-bottom: 10px; /* Kutular arası boşluk */
+  text-align: center; /* Metni ortala */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover efektini yumuşakça yapmak için geçiş efekti */
+}
+
+.turnuva-kutu a {
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  color: black; /* Yazı rengi */
+  font-weight: bold;
+}
+
+.turnuva-kutu:hover {
+  transform: scale(1.1); /* Hover durumunda kutuyu 1.1 kat büyütme */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hover durumunda kutu gölgesi */
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnuva Kayıt</title>
+    <link rel="stylesheet" href="style.css"> <!-- Stil dosyası -->
+    <style>
+        /* Temel stil ayarları */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #f0f0f0;
+            padding: 10px 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        header img {
+            max-height: 50px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            margin-top: 100px; /* Header'ın altında başlasın */
+            width: 100%;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form input[type="text"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        footer {
+            background-color: #f0f0f0;
+            color: #000;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="İzmir İl Temsilciliği Logo">
+        <h1>İzmir İl Temsilciliği</h1>
+        <p>DEU YBS KATKILARIYLA</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.php">Anasayfa</a></li>
+            <li><a href="kaynaklar.php">Kaynaklar</a></li>
+            <li><a href="haberler.php">Satranç Haberleri</a></li>
+            <li><a href="kayit.php">Turnuva Kayıt</a></li>
+            <li><a href="iptal.php">Kayıt İptal</a></li>
+            <li><a href="ogrenciler.php">Kayıtlı Öğrenciler</a></li>
+            <li><a href="hakemler.php">Hakemler</a></li>
+            <li><a href="ogretmenler.php">Öğretmenler</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="kayit.php" method="post">
+            <label for="ad">Adınız:</label>
+            <input type="text" id="ad" name="ad" required>
+            <label for="soyad">Soyadınız:</label>
+            <input type="text" id="soyad" name="soyad" required>
+            <label for="ukd">UKD:</label>
+            <input type="text" id="ukd" name="ukd" required>
+            <label for="referans">Referans Kodu:</label>
+            <input type="text" id="referans" name="referans" required>
+            <input type="submit" value="Kayıt Ol">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 İzmir Satranç Federasyonu</p>
+    </footer>
+</body>
+</html>
